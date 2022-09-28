@@ -29,6 +29,7 @@ namespace APIWife.Models
                 body = await response.Content.ReadAsStringAsync();
             }
             string recipeTitle = null;
+            List<Ingredient> ingredients = null;
             Root myDeserializedClass = new Root();
             if (!string.IsNullOrEmpty(body))
             {
@@ -38,6 +39,7 @@ namespace APIWife.Models
                 {
                     //Console.WriteLine(Hit.Recipe.Label);
                     recipeTitle = Hit.Recipe.Label;
+                    //ingredients = Hit.Recipe.Ingredients;
 
                 }
             }

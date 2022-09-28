@@ -7,6 +7,15 @@
 {
 <h2>Today's Meal: @Model.Hits[0].Recipe.Label </h2>
 
+@foreach(var item in Model.Hits[0].Recipe.IngredientLines)
+                {
+                    <h4>@item</h4>
+                }
+@*@foreach(var item in Model.Hits)
+    {
+       <h2>@item.Recipe.Ingredients</h2>
+    }*@
+
 }
 
 else
