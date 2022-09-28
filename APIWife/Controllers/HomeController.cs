@@ -18,6 +18,15 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet]
+    public async Task<IActionResult> ViewMealName()
+    {
+        var api = new WifesAllergies();
+        var meal =  await api.GetFood();
+        return View(meal);
+    }
+    
+
     public IActionResult Privacy()
     {
         return View();

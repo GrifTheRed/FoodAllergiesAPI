@@ -1,0 +1,17 @@
+﻿@using APIWife.Models
+
+@model RootModel.Root
+
+
+@if (@Model != null)
+{
+<h2>Today's Meal: @Model.Hits[0].Recipe.Label </h2>
+
+}
+
+else
+            {
+                <h2>Website down</h2>
+            }
+
+
