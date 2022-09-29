@@ -1,7 +1,11 @@
 ﻿html {
-  font-size: 20px;
+  font-size: 10px;
 }
-
+* {
+    color: red;
+    text-align: center;
+}
+    
 @media (min-width: 768px) {
   html {
     font-size: 16px;
